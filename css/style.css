@@ -1,0 +1,271 @@
+/*************** GENERAL STYLES ***************/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+/******** Variables ********/
+:root {
+  --button-link-color: hsl(322, 100%, 66%);
+  --button-link-color-hover: hsl(321, 100%, 78%);
+  --input-focus: hsl(0, 100%, 63%);
+  --footer-color: hsl(192, 100%, 9%);
+  --sections-color: hsl(207, 100%, 98%);
+  --font-title: 'Poppins', sans-serif;
+  --font-paragraph: 'Open Sans', sans-serif;
+  --wave: url("../images/bg-section-top-mobile-1.svg");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-paragraph);
+}
+
+/*************** HEADER ***************/
+.container {
+  margin: 0 auto;
+  padding: 6.25em 0;
+  width: 90%;
+  max-width: 75em;
+  overflow: hidden;
+}
+
+.nav {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6.25em;
+}
+.nav__logo {
+  height: 1em;
+}
+.nav__img {
+  height: 100%;
+}
+.nav__link-button {
+  padding: 0.3em 1.5em;
+  font-size: 0.8rem;
+  color: var(--button-link-color);
+  text-decoration: none;
+  border: 0.1em solid var(--button-link-color);
+  border-radius: 1.25em;
+  box-shadow: -0.12em 0.125em 2em -0.94em var(--button-link-color);
+  transition: all .3s ease-in-out;
+}
+
+/***** Hero *****/
+.hero {
+  position: relative;
+}
+
+.hero__main {
+  text-align: center;
+}
+.title {
+  margin-bottom: .7em;
+  font-family: var(--font-title);
+  font-size: 1.9rem;
+}
+.hero__paragraph {
+  color: var(--footer-color);
+}
+.link {
+  margin-top: 3em;
+  padding: .7em 3em;
+  color: var(--sections-color);
+  text-decoration: none;
+  background: var(--button-link-color);
+  border-radius: 1.875em;
+  box-shadow: 0 .07em .1em rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  transition: all .3s ease-in-out;
+}
+
+.hero__picture {
+  margin: 8em auto;
+  width: 90%;
+}
+.hero__img {
+  width: 100%;
+}
+
+.hero__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+}
+.hero__card {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.hero__paragraph {
+  margin: 0 auto;
+}
+.hero__number {
+  font-size: 3rem;
+}
+.hero__paragraph-color {
+  text-align: center;
+}
+
+/***** Wave *****/
+.wave {
+  width: 100%;
+  height: 6.25em;
+  background-image: var(--wave);
+  background-size: 100% 6.25em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.wave-top {
+  top: 0;
+  bottom: none;
+  background-image: var(--wave2);
+}
+
+/*************** MAIN ***************/
+/***** Section *****/
+.section {
+  background: var(--sections-color);
+  text-align: center;
+  position: relative;
+}
+
+.section__container {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+.section__img {
+  width: 100%;
+}
+.subtitle {
+  margin-bottom: .7em;
+  font-size: 1.5rem;
+}
+.section__paragraph {
+  color: var(--footer-color);
+}
+
+.section-white {
+  background: white;
+  --wave: url("../images/bg-section-top-mobile-2.svg");
+  --wave2: url("../images/bg-section-bottom-mobile-1.svg");
+}
+
+.community {
+  padding: 12em 0;
+  text-align: center;
+  position: relative;
+  --wave2: url(../images/bg-section-bottom-mobile-2.svg);
+  --wave: url(../images/bg-footer-top-mobile.svg);
+}
+
+.title-community {
+  margin-bottom: 0;
+}
+
+/*************** FOOTER ***************/
+.footer {
+  background: var(--footer-color);
+  color: var(--sections-color);
+}
+.footer__title {
+  font-size: 1.5rem;
+  font-family: var(--font-title);
+  text-transform: uppercase;
+}
+.footer__paragraph {
+  margin-top: 1em;
+}
+.footer__form {
+  margin-top: 2.7em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: flex-end;
+}
+.footer__input {
+  padding: 0.938em 0.188em;
+  width: 100%;
+  font-family: var(--font-paragraph);
+  border-radius: 0.6em;
+  border: none;
+  outline: none;
+}
+.footer__submit {
+  padding: 0.625em 3.125em;
+  font-family: var(--font-paragraph);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--sections-color);
+  background: var(--button-link-color);
+  border-radius: 0.3em;
+  border: none;
+  outline: none;
+  transition: all .3s ease-in-out;
+}
+
+/* HUDDLE 2 ICON NOT AVAILABLE! */
+
+.footer__contact {
+  margin-top: 6em;
+}
+
+.footer__social {
+  display: flex;
+  align-items: flex-end;
+  gap: 1em;
+}
+
+.footer__social-media{
+  margin-top: 1.7em;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.footer__social-first {
+  margin-top: 1em;
+}
+
+.attribution {
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a {
+  color: hsl(228, 45%, 44%); 
+}
+
+/*************** HOVER ***************/
+.nav__link-button:hover {
+  border: 0.1em solid var(--button-link-color-hover);
+  color: var(--button-link-color-hover);
+  box-shadow: -0.12em 0.13em 2em -0.6em var(--button-link-color);
+}
+
+.link-hover:hover {
+  background: var(--button-link-color-hover);
+  box-shadow: 0 .07em .2em rgba(0, 0, 0);
+}
+.footer__input:focus {
+  border: 0.1em solid var(--input-focus);
+}
+
+.fa-facebook-square:hover {
+  color: blue;
+  transition: all .3s ease-in-out;
+}
+.fa-instagram:hover {
+  color: violet;
+  transition: all .3s ease-in-out;
+}
+.fa-twitter-square:hover {
+  color: aqua;
+  transition: all .3s ease-in-out;
+}
